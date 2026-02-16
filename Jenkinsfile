@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ANSIBLE_SERVER_IP = 'ANSIBLE_CONTROL_NODE_IP' // e.g. 10.0.1.10
+        ANSIBLE_SERVER_IP = '98.84.169.117' // e.g. 10.0.1.10
         USER      = 'ubuntu'                 // or ubuntu, etc.
     }
 
