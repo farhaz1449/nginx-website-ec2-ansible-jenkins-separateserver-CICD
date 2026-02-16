@@ -3,14 +3,14 @@ Step 1: Prepare Jenkins Server and Configure it
           https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
 Step 2: Prepare Ansible Server and Configure it
         * Install Ansible  https://docs.ansible.com/projects/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu 
-        * Generate the SSH key.         
+        * Generate the SSH key as Ubuntu user as ansible_user=ubuntu.         
         * Create SSH Public key and Copy that to Deployment Server's Authorized Keys
         * Check if remote SSH succesful by: ssh ubuntu@<deploymentServer>
 Step 2: Prepare Deployment Server and Configure it
 Step 3: Create Git Repository and Push the Codebase to Remote Repository
 Step 4: Write hosts, ansible.cfg and ansible playbook and Push to remote repository
 Step 5: Write Jenkinsfile
-Step 6: Go to Jenkins WebUI and install necessary Plug-Ins such as Ansible and Create a Pipeline
+Step 6: Go to Jenkins WebUI and install necessary Plug-Ins such as Ansible and SSH Agent, add credentials for   the Jenkins server to access to Ansible server: user ubuntu and private-key and then Create a Pipeline
 Step 7: Create a GitHub Webhook to complete the CICD Pipeline. (https://<jenkinsServer>:8080/github-webhook/)
 
 ************************************** In Detail **********************************************
