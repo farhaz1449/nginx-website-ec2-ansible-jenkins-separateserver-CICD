@@ -1,7 +1,7 @@
 Step 1: Prepare Jenkins Server and Configure it
         * Install Java and Jenkins
           https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
-Step 2: Prepare Jenkins Server and Configure it
+Step 2: Prepare Ansible Server and Configure it
         * Install Ansible  https://docs.ansible.com/projects/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu 
         * Generate the SSH key.         
         * Create SSH Public key and Copy that to Deployment Server's Authorized Keys
